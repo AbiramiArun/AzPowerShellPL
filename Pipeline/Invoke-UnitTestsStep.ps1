@@ -44,6 +44,8 @@ Write-Host "Running build pipeline step: Unit tests"
 
 Write-Host "Checking if the Pester module is already installed."
 
+Write-Host "Checking ....."
+
 $modulePrerequisite = Get-Module -ListAvailable | Where-Object { $_.Name -eq "Pester" -and $_.Version -eq $PesterVersion }
 
 if ($modulePrerequisite -eq $null)
