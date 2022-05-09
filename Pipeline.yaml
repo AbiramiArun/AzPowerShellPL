@@ -2,7 +2,7 @@
 # Schema/help: https://aka.ms/yaml
 
 trigger:
-- master
+- main
 
 pr:
   branches:
